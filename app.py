@@ -206,6 +206,26 @@ def load_custom_css():
         .result-card:hover {
             transform: scale(1.03) translateY(-10px) !important;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem !important;
+                margin-top: 1rem;
+            }
+            .block-container {
+                padding: 1.5rem !important;
+                margin-top: 1rem !important;
+                margin-bottom: 1rem !important;
+            }
+            div.stButton > button:first-child {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+            .result-card h1 {
+                font-size: 3rem !important; /* Scale down the giant percentage on mobile */
+            }
+        }
     </style>
     """, unsafe_allow_html=True)
 
