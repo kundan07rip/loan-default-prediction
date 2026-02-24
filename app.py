@@ -53,8 +53,7 @@ def load_custom_css():
         }
 
         /* Styling Inputs with Glassmorphism */
-        div[data-baseweb="input"] > div, 
-        div[data-baseweb="slider"] > div {
+        div[data-baseweb="input"] > div {
             background: rgba(255, 255, 255, 0.05) !important;
             border: 1px solid rgba(255, 255, 255, 0.1) !important;
             border-radius: 12px !important;
@@ -62,8 +61,7 @@ def load_custom_css():
             transition: all 0.3s ease;
         }
         
-        div[data-baseweb="input"] > div:hover, 
-        div[data-baseweb="slider"] > div:hover {
+        div[data-baseweb="input"] > div:hover {
             border: 1px solid rgba(255, 215, 0, 0.5) !important;
             box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
         }
